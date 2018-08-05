@@ -1,1 +1,2 @@
-initial-commit
+1, initial-commit
+2, made travis.sh and docker.sh executable
