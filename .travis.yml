@@ -2,6 +2,7 @@ language: java
 sudo: required
 install: true
 script:
+  - ./env_dump.sh
   - ./travis.sh
   - ./docker.sh build
 cache:
