@@ -1,3 +1,4 @@
 1, initial-commit
 2, made travis.sh and docker.sh executable
 3, added env_dump.sh
+4, permissions borked
