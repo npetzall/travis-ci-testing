@@ -3,3 +3,4 @@
 3, added env_dump.sh
 4, permissions borked
 5, added github releases on tags
+6, version 1.0.1
