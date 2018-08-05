@@ -16,8 +16,7 @@ function deploy() {
     fi
 }
 
-if [[ "${TRAVIS_BRANCH}" == "master" ]] &&
-   [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then
+if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then
     case "$1" in
         build)
             build

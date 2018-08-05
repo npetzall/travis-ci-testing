@@ -12,6 +12,7 @@ deploy:
   - provider: releases
     api_key:
       secure: JIb6D6/cY5aQZAcPgCVs3iz5BcQBFtRtHI5FwB0XYtaC+aK5OZpX1oTf507T5yDxyUJAeKepobj0dDT+zBtos6rgm9/ih/QilgKf/hw2jE4/5RYvWm1VuP79qZXG3AH/Y1vAWFNgNDwsbeeQm9OCth1d+eKBtMVL9E+49BSOLYddaDmfh6dtNUUwjauLOgo6xZNhm4BTo5h8DK/yeGzy4YsEZhdyazqU2nbbGNYlJBCOg2iXpVY/0eoCwr/ZLj+4dsSMoq986gcqBC9UPYayF2aOBrGcqnrhQQp2Zk4I3X94KLXhvH6kz//XAgGS1D+kq3ga30hFng+lrvMNGwLCZrJh39kocHkyoAt+Dk7ch1zx9vwJg/vl9H2vMyhZFgXr0ok+XIFKrJYV7NwoJ9GhFG0tfCyR/tjlgHVxSLTsCpaVm/8kg8fVRTCJxWdUKxsbY2MtxVRpjjG9ax+dliKJMFcJTBhRpk9BX70If3GT7SEbEEBWhne+WhqCj4VBPTL+8T5/qbldQSfxE0SGrsJx5xO0yaYa3X/XsHOJCZUn97qOgargMSiMTCohfyDHIrlKsnz4wa32W5gFtJ9EL7SMoaezehTaUipjEamqSKfjgpmi6vve6zVC3mi/TYvqkodSffYIhAtBd4sip40WQwdG7/kV/JNJgye7sgK7vYXOuFE=
+    skip_cleanup: true
     file: log.txt
     on:
       repo: npetzall/travis-ci-testing
@@ -21,3 +22,4 @@ deploy:
     script: ./docker.sh deploy
     on:
       repo: npetzall/travis-ci-testing
+      all_branches: true
