@@ -8,3 +8,4 @@
 8, version 1.0.2
 9, version 1.0.3
 10, version 1.0.4
+11, version 1.0.5 should be a draft with glob upload
