@@ -7,3 +7,4 @@
 7, updating on for script deployment, changing condition for docker actions in docker.sh
 8, version 1.0.2
 9, version 1.0.3
+10, version 1.0.4
