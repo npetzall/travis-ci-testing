@@ -1,0 +1,16 @@
+language: java
+sudo: required
+install: true
+script:
+  - ./travis.sh
+  - ./docker.sh build
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: ./docker.sh deploy
+    on:
+      branch: master
